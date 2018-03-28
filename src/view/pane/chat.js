@@ -819,7 +819,6 @@ Candy.View.Pane = (function(self, $) {
        */
       show: function(elem, roomJid, user) {
         elem = $(elem);
-        console.log(elem);
         var roomId = self.Chat.rooms[roomJid].id,
           menu = $('#context-menu'),
           links = $('ul li', menu);
@@ -860,7 +859,8 @@ Candy.View.Pane = (function(self, $) {
           var pos = elem.offset(),
             posLeft = Candy.Util.getPosLeftAccordingToWindowBounds(menu, pos.left),
             posTop  = Candy.Util.getPosTopAccordingToWindowBounds(menu, pos.top);
-
+            console.log(posLeft);
+            console.log(posTop);
           menu
             .css({'left': posLeft.px, 'top': posTop.px})
             .removeClass('left-top left-bottom right-top right-bottom')
