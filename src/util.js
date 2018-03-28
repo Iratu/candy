@@ -182,7 +182,7 @@ Candy.Util = (function(self, $){
 	 *   Object containing `px` (calculated position in pixel) and `alignment` (alignment of the element in relation to pos, either 'left' or 'right')
 	 */
 	self.getPosLeftAccordingToWindowBounds = function(elem, pos) {
-		var windowWidth = $(document).width(),
+		var windowWidth = $("#candy").width(),
 			elemWidth   = elem.outerWidth(),
 			marginDiff = elemWidth - elem.outerWidth(true),
 			backgroundPositionAlignment = 'left';
@@ -210,7 +210,7 @@ Candy.Util = (function(self, $){
 	 *   Object containing `px` (calculated position in pixel) and `alignment` (alignment of the element in relation to pos, either 'top' or 'bottom')
 	 */
 	self.getPosTopAccordingToWindowBounds = function(elem, pos) {
-		var windowHeight = $(document).height(),
+		var windowHeight = $("#candy").height(),
 			elemHeight   = elem.outerHeight(),
 			marginDiff = elemHeight - elem.outerHeight(true),
 			backgroundPositionAlignment = 'top';
