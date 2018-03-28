@@ -819,10 +819,11 @@ Candy.View.Pane = (function(self, $) {
        */
       show: function(elem, roomJid, user) {
         elem = $(elem);
+        console.log(elem);
         var roomId = self.Chat.rooms[roomJid].id,
           menu = $('#context-menu'),
           links = $('ul li', menu);
-
+        console.log(menu);
         $('#tooltip').hide();
 
         // add specific context-user class if a user is available (when context menu should be opened next to a user)
