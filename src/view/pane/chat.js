@@ -819,6 +819,7 @@ Candy.View.Pane = (function(self, $) {
        */
       show: function(elem, roomJid, user) {
         elem = $(elem);
+        console.log(elem);
         var roomId = self.Chat.rooms[roomJid].id,
           menu = $('#context-menu'),
           links = $('ul li', menu);
