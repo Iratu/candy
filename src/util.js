@@ -186,6 +186,8 @@ Candy.Util = (function(self, $){
 			elemWidth   = elem.outerWidth(),
 			marginDiff = elemWidth - elem.outerWidth(true),
 			backgroundPositionAlignment = 'left';
+            console.log(elem);
+            console.log(pos);
 
 		if (pos + elemWidth >= windowWidth) {
 			pos -= elemWidth - marginDiff;
